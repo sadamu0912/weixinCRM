@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeteaf.org">
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>小程序后台管理系统</title>
+     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+     <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <!-- GLOBAL STYLES -->
+    <link rel="stylesheet" th:href="@{/component/bootstrap/css/bootstrap.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/framework/main.css}" />
+    <link rel="stylesheet" th:href="@{/css/framework/theme.css}" />
+    <link rel="stylesheet" th:href="@{/css/framework/MoneAdmin.css}" />
+    <link rel="stylesheet" th:href="@{/component/Font-Awesome/css/font-awesome.css}" />
+</head>
+<body>
+
+    <!-- MAIN WRAPPER -->
+    <div id="wrap" >
+        <header id="top" th:include="header :: headerfrag"></header>
+		<aside id="left" th:include="sidebar :: sidebarfrag"></aside>
+      </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <p>&copy;  山抹微云网络科技 &nbsp;2017 &nbsp;</p>
+    </div>
+    <!--END FOOTER -->
+
+
+    <!-- GLOBAL SCRIPTS -->
+    <script th:src="@{/component/jquery/jquery-2.1.1.min.js}"></script>
+     <script th:src="@{/component/bootstrap/js/bootstrap.min.js}"></script>
+    <!-- END GLOBAL SCRIPTS -->
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <script th:src="@{/component/flot/jquery.flot.js}"></script>
+    <script th:src="@{/component/flot/jquery.flot.resize.js}"></script>
+    <script th:src="@{/component/flot/jquery.flot.time.js}"></script>
+     <script  th:src="@{/component/flot/jquery.flot.stack.js}"></script>
+   
+    <!-- END PAGE LEVEL SCRIPTS -->
+
+
+</body>
+</html>
