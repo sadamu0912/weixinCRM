@@ -1,8 +1,0 @@
-com\xjxspace\controller\HomeController.class
-com\xjxspace\util\Common.class
-com\xjxspace\MainApplicion.class
-com\xjxspace\controller\user\UserController.class
-com\xjxspace\filter\LoginFilter.class
-com\xjxspace\mapper\UserMapper.class
-com\xjxspace\model\User.class
-com\xjxspace\filter\EncodingFilter.class
