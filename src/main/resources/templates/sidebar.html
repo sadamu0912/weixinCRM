@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body class="fixed">
-        <div id="left" th:fragment="sidebarfrag">
+        <div id="left" class="navbar navbar-inverse navbar-fixed-top" role="navigation" th:fragment="sidebarfrag">
         <!-- 用户头像 -->
         	 <div class="media user-media">
                 <a class="user-link" href="#">
@@ -28,7 +28,7 @@
             </div>
             <!--用户头像 END  -->
              <!--菜单 -->
-             <ul id="menu" class="collapse">
+            <!--  <ul id="menu" class="collapse">
 
                 
                 <li class="panel active">
@@ -66,7 +66,43 @@
                     </ul>
                 </li>
                 
-			</ul>
+			</ul> -->
+			 <ul id="menu" class="nav sidebar-nav">
+			 	 <li class="panel active">
+                    <a href="index.html" >
+                        <i class="icon-dashboard"></i> 首页
+                    </a>                   
+                </li>
+                
+                <li class="panel">
+                    <a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#projectManager">
+                        <i class="icon-asterisk"> </i>   项目配置  
+	   
+                        <span class="pull-right">
+                          <i class="icon-angle-left"></i>
+                        </span>
+                    </a>
+                    <ul class="collapse" id="projectManager">
+                       
+                        <li class=""><a href="button.html"><i class="icon-angle-right"></i>轮播图片配置</a></li>
+                         <li class=""><a href="icon.html"><i class="icon-angle-right"></i> 消息设置 </a></li>
+                        <li class=""><a href="progress.html"><i class="icon-angle-right"></i>优惠券设置</a></li>
+                    </ul>
+                </li>
+                
+                <li class="panel">
+                	<a href="#" data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#userManager">
+                		 <i class="icon-user"> </i>   用户管理
+                		  <span class="pull-right">
+                          <i class="icon-angle-left"></i>
+                        </span> 
+                	</a>
+                		<ul class="collapse" id="userManager">
+                       
+                        <li class=""><a href="button.html"><i class="icon-angle-right"></i>用户详情</a></li>
+                    </ul>
+                </li>
+			 </ul>
           </div>
 
         </body>
