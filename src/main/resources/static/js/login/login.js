@@ -7,10 +7,10 @@
 			},
 			init:function(){
 				this.loginBtnClick();
+				loadFun("/js/test.js");
 			},
 		loginBtnClick:function(){
 			$('#loginButton').click(function(){
-				debugger
 				event.preventDefault();
 				$('form').fadeOut(500);
 				$('.wrapper').addClass('form-success');

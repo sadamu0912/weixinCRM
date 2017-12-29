@@ -25,7 +25,11 @@ background-repeat: repeat-x;
 
 #footer {
   height: 48px;
-  background-color: #222222;
+  background-color: #222;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%
 }
 
 @media (min-width: 768px) {
@@ -115,7 +119,6 @@ body.padTop53 {
 
 @media (min-width: 768px) {
   #left {
-    position: relative;
     float: left;
     width: 100px;
   }
@@ -233,6 +236,13 @@ body.padTop53 {
 /* END TOP bar */
 /* BEGIN header.head bar */
 
+#top{
+	position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  z-index:100;
+}
 .head {
   text-shadow: 0 1px 0px rgba(0, 0, 0, 0.5);
   background: #404040;
@@ -634,9 +644,11 @@ font-weight: bolder;
 
 /* BEGIN CONTENT STYLES */
 
-#content {
+#wrapper {
   -webkit-transition: margin 0.4s;
           transition: margin 0.4s;
+          margin-top:62px;
+          margin-bottom:48px;
 }
 
 .outer {
