@@ -250,3 +250,12 @@
   z-index: 1;
 }
 
+.navbar-header .container{
+	width:250px;
+	height:40px;
+	font-size:19px;
+}
+.navbar-header a:hover{
+	color: #FF00FF;
+	text-decoration:none;
+}
